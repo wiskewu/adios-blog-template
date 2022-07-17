@@ -1,7 +1,7 @@
 {
   "name": "adios-blog-template",
   "version": "0.0.1",
-  "description": "template of adios-blog-site, using 'adios-blog-cli' as cli to compile and preview.",
+  "description": "template of static blog website, using 'adios-blog-cli' as cli to compile and preview.",
   "main": "index.js",
   "scripts": {
     "build": "node ./scripts/build.js",
@@ -11,8 +11,19 @@
     "build:watch": "chokidar \"theme/**/*\" \"source/**/*\" -c \"yarn build:clean\"",
     "dev:watch": "concurrently \"yarn build:watch\" \"yarn dev\""
   },
-  "keywords": [],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wiskewu/adios-blog-template.git"
+  },
+  "author": {
+		"name": "wiskewu",
+		"email": "wiskewu@gmail.com",
+		"url": "https://github.com/wiskewu"
+	},
+  "bugs": {
+    "url": "https://github.com/wiskewu/adios-blog-template/issues"
+  },
+  "keywords": ["static blog", "blog theme", "blog"],
   "license": "MIT",
   "dependencies": {
     "adios-blog-cli": "^0.0.3",
