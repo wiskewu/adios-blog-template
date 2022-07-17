@@ -43,7 +43,7 @@ then open `localhost:3000` in the browser to see the blog content.
 
 Or you can use the `adios-blog-cli` to get started:
 ```bash
-yarn add adios-blog-cli -g
+yarn global add adios-blog-cli
 
 adios
 ```
