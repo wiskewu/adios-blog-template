@@ -171,7 +171,52 @@ and your md file will goes like this:
 And it's done! You don't have to worry about your image can't be found one day in the future.
 
 ### Deploy
-// TO BE ADDED
+We support CI with the `Github Action`.
+We'll take user `wiskewu`(That's me) as an example, Say that we want to deploy the blog with the homepage gose like ['wiskewu.github.io/adios-blog-site/'](wiskewu.github.io/adios-blog-site/):
+1. Init project
+    ```bash
+    git clone git@github.com:wiskewu/adios-blog-template.git adios-blog-site
+
+    cd adios-blog-site
+    ```
+2. Update Project Name
+    edit package.json: 
+    ```json
+    {
+        "name": "adios-blog-site"
+    }
+    ```
+3. Update Config
+    edit adios.config.json
+    ```json
+    {
+        "siteinfo": {
+            "publicPath": "/adios-blog-site/"
+        }
+    }
+    ```
+    > the publicPath is the pathname of 'wiskewu.github.io/adios-blog-site/'
+4. Save changes and Init Git Repo
+    make sure you have added new repository on github, then:
+    ```bash
+    rm -rf .git
+    git init
+    git add .
+    git commit -m "Init"
+    git remote add origin git@github.com:wiskewu/adios-blog-site.git
+    git push
+    ```
+5. Check the Github Action on Github Repo
+    > https://github.com/wiskewu/adios-blog-site/actions
+
+    make sure the action excute successfully.
+    > Once succeed, you will have an repo branch named `gh-pages` created by Bot.
+6. Config Github Pages
+    > https://github.com/wiskewu/adios-blog-site/settings/pages
+    select `gh-pages` as an source. then all works done.
+7. Wait a moment and your blogs will be deployed on ['wiskewu.github.io/adios-blog-site/'](wiskewu.github.io/adios-blog-site/)
+
+8. Add new posts and Enjoy it.
 
 ### Markdown parse
 Once you start up the preview mode by running `yarn dev`, you can open the url `localhost:3000/extra/demo` and the url `https://markdown-it.github.io/` to see the difference and support between them.
