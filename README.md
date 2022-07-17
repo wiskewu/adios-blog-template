@@ -204,7 +204,7 @@ We'll take user `wiskewu`(That's me) as an example, Say that we want to deploy t
     git add .
     git commit -m "Init"
     git remote add origin git@github.com:wiskewu/adios-blog-site.git
-    git push
+    git push --set-upstream origin master
     ```
 5. Check the Github Action on Github Repo
     > https://github.com/wiskewu/adios-blog-site/actions
@@ -213,8 +213,8 @@ We'll take user `wiskewu`(That's me) as an example, Say that we want to deploy t
     > Once succeed, you will have an repo branch named `gh-pages` created by Bot.
 6. Config Github Pages
     > https://github.com/wiskewu/adios-blog-site/settings/pages
-    select `gh-pages` as an source. then all works done.
-7. Wait a moment and your blogs will be deployed on ['wiskewu.github.io/adios-blog-site/'](wiskewu.github.io/adios-blog-site/)
+    select `gh-pages` as an source and save it. then all works get done.
+7. Wait a moment and your blogs will be deployed on ['wiskewu.github.io/adios-blog-site/'](wiskewu.github.io/adios-blog-site/) soon (about 1 minute).
 
 8. Add new posts and Enjoy it.
 
