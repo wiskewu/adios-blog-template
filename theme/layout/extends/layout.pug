@@ -19,6 +19,11 @@ block rootpage
             include ../includes/purecss.pug
             link(rel="stylesheet", href=utils.resolveRes('statics/css/theme.css'))
             link(rel="stylesheet", href=utils.resolveRes('statics/css/layout.css'))
+            //- icons
+            link(rel="apple-touch-icon", sizes="180x180", href=utils.resolveRes('statics/icons/apple-touch-icon.png'))
+            link(rel="icon",type="image/png", sizes="32x32", href=utils.resolveRes('statics/icons/favicon-32x32.png'))
+            link(rel="icon",type="image/png", sizes="16x16", href=utils.resolveRes('statics/icons/favicon-16x16.png'))
+            link(rel="manifest", href=utils.resolveRes("statics/icons/site.webmanifest"))
             block head
         body.theme-light
             div#app
