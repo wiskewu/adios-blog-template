@@ -2,7 +2,6 @@
 title: 我的第四篇博客
 layout: post
 createDate: 2022-07-13 17:20
-updateDate: 2022-07-13 18:20
 author: wiskewu
 categories: 前端
 tags: JS, React
