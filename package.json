@@ -1,6 +1,6 @@
 {
   "name": "adios-blog-template",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "template of static blog website, using 'adios-blog-cli' as cli to compile and preview.",
   "main": "index.js",
   "scripts": {
@@ -17,20 +17,24 @@
     "url": "https://github.com/wiskewu/adios-blog-template.git"
   },
   "author": {
-		"name": "wiskewu",
-		"email": "wiskewu@gmail.com",
-		"url": "https://github.com/wiskewu"
-	},
+    "name": "wiskewu",
+    "email": "wiskewu@gmail.com",
+    "url": "https://github.com/wiskewu"
+  },
   "bugs": {
     "url": "https://github.com/wiskewu/adios-blog-template/issues"
   },
-  "keywords": ["static blog", "blog theme", "blog"],
+  "keywords": [
+    "static blog",
+    "blog theme",
+    "blog"
+  ],
   "license": "MIT",
   "dependencies": {
-    "adios-blog-cli": "^0.0.4",
+    "@wiske/adios-theme-default": "^0.0.3",
+    "adios-blog-cli": "^0.0.5",
     "chokidar-cli": "^3.0.0",
-    "gh-pages": "^4.0.0",
-    "pug": "^3.0.2"
+    "gh-pages": "^4.0.0"
   },
   "devDependencies": {
     "@types/node": "^18.0.3",

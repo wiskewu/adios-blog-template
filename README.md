@@ -121,16 +121,16 @@ the description of source template file and its output routes.
 at the begininng of your post md file, you can specify some fields to describe your post information.
 content should be nested by one pair of `---`.
 > --- # beginning of informations
-> title: the title of your post.
-> layout: the post template name, default to 'post'
-> createDate: the date when you write this blog, goes by the format `YYYY-MM-DD HH:mm`
-> updateDate: the date when you update this blog, goes by the format `YYYY-MM-DD HH:mm`
-> author: the author's name of this post.
-> categories: the categories which this post belongs to, goes by the format `categoryA, categoryB`
-> tags: the tags which this post belongs to, goes by the format `tagA, tagB`
-> summary: the summary of this post
-> draft: if set to `false`, then this post will not be complied into your site temporarily。
-> top: specify wheather this post ranked first of all other posts. `true` or `false`
+> title: {Required} the title of your post.
+> layout: {Optional = 'post'} the post template name, default to 'post'
+> createDate: {Required} the date when you write this blog, goes by the format `YYYY-MM-DD HH:mm`
+> updateDate: {Optional} the date when you update this blog, goes by the format `YYYY-MM-DD HH:mm`
+> author: {Required} the author's name of this post.
+> categories: {Required} the categories which this post belongs to, goes by the format `categoryA, categoryB`
+> tags: {Optional} the tags which this post belongs to, goes by the format `tagA, tagB`
+> summary: {Optional} the summary of this post
+> draft: {Optional = false} if set to `false`, then this post will not be complied into your site temporarily。
+> top: {Optional = false} specify wheather this post ranked first of all other posts. `true` or `false`
 > --- # end of informations 
 
 see the demo below:
