@@ -5,7 +5,8 @@
         "description": "Adiós的个人博客网站",
         "keywords": "Adiós's independent blog",
         "homepage": "/",
-        "publicPath": "/"
+        "publicPath": "/",
+        "createAt": "2022/11/07"
     },
     "settings": {
         "pageSize": 10,

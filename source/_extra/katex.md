@@ -1,5 +1,6 @@
-# Maxwell's Equations
+[Demo from markdown-it-katex](http://waylonflinn.github.io/markdown-it-katex/)
 
+# Maxwell's Equations
 
 equation | description
 ----------|------------
