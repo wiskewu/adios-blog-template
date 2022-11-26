@@ -39,6 +39,11 @@
                 "source": "demo",
                 "layout": "extra",
                 "outputName": "demo"
+            },
+            {
+                "source": "katex",
+                "layout": "extra",
+                "outputName": "katex"
             }
         ]
     },
